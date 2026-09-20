@@ -2,7 +2,6 @@ define([], function() {
   return {
     "PropertyPaneDescription": "Description",
     "BasicGroupName": "Group Name",
-    "DescriptionFieldLabel": "Description Field",
     "MorningMessageLabel": "Message to show in the morning",
     "AfternoonMessageLabel": "Message to show in the afternoon",
     "EveningMessageLabel": "Message to show in the evening",
@@ -14,6 +13,9 @@ define([], function() {
     "AppTeamsTabEnvironment": "The app is running in Microsoft Teams",
     "AppOfficeEnvironment": "The app is running in office.com",
     "AppOutlookEnvironment": "The app is running in Outlook",
-    "UnknownEnvironment": "The app is running in an unknown environment"
+    "UnknownEnvironment": "The app is running in an unknown environment",
+    "PlaceholderDescription": "Please add messages",
+    "PlaceholderIconText": "Setup Webpart",
+    "PlaceholderButtonLabel": "Configure"
   }
 });

@@ -21,7 +21,7 @@
       "description": { "default": "FAQ description" },
       "officeFabricIconFontName": "Info",
       "properties": {
-        "description": "FAQ"
+        "listId": ""
       }
     }
   ]

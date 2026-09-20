@@ -1,18 +1,11 @@
-import { Version } from '@microsoft/sp-core-library';
-import { type IPropertyPaneConfiguration } from '@microsoft/sp-property-pane';
-import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
-import "@pnp/sp/webs";
-import "@pnp/sp/lists";
-import "@pnp/sp/items";
+import { Version } from "@microsoft/sp-core-library";
+import { type IPropertyPaneConfiguration } from "@microsoft/sp-property-pane";
+import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
+import { IReadonlyTheme } from "@microsoft/sp-component-base";
 export interface IFaqWebPartProps {
-    description: string;
     listId: string;
 }
 export default class FaqWebPart extends BaseClientSideWebPart<IFaqWebPartProps> {
-    private _isDarkTheme;
-    private _environmentMessage;
-    private sp;
     protected get disableReactivePropertyChanges(): boolean;
     render(): void;
     protected onInit(): Promise<void>;

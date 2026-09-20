@@ -1,10 +1,9 @@
 declare interface IWelcomeWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
-  DescriptionFieldLabel: string;
   MorningMessageLabel: string;
-  AfternoonMessageLabel: string,
-  EveningMessageLabel: string,
+  AfternoonMessageLabel: string;
+  EveningMessageLabel: string;
   AppLocalEnvironmentSharePoint: string;
   AppLocalEnvironmentTeams: string;
   AppLocalEnvironmentOffice: string;
@@ -14,6 +13,9 @@ declare interface IWelcomeWebPartStrings {
   AppOfficeEnvironment: string;
   AppOutlookEnvironment: string;
   UnknownEnvironment: string;
+  PlaceholderDescription: string;
+  PlaceholderIconText: string;
+  PlaceholderButtonLabel: string;
 }
 
 declare module 'WelcomeWebPartStrings' {

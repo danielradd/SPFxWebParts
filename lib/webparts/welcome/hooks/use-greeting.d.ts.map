@@ -1,0 +1,1 @@
+{"version":3,"file":"use-greeting.d.ts","sourceRoot":"","sources":["../../../../src/webparts/welcome/hooks/use-greeting.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,iBAAiB;IAChC,cAAc,EAAE,MAAM,CAAC;IACvB,gBAAgB,EAAE,MAAM,CAAC;IACzB,cAAc,EAAE,MAAM,CAAC;CACxB;AAED,wBAAgB,WAAW,CAAC,QAAQ,EAAE,iBAAiB,GAAG,MAAM,CAa/D"}

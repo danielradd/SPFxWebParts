@@ -1,0 +1,1 @@
+{"version":3,"file":"get-sp.d.ts","sourceRoot":"","sources":["../../src/utils/get-sp.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,CAAC;AACtB,OAAO,eAAe,CAAC;AACvB,OAAO,eAAe,CAAC;AAEvB,OAAO,EAAc,IAAI,EAAE,MAAM,SAAS,CAAC;AAC3C,OAAO,EAAE,cAAc,EAAE,MAAM,4BAA4B,CAAC;AAE5D,wBAAgB,KAAK,CAAC,OAAO,EAAE,cAAc,EAAE,OAAO,CAAC,EAAE,MAAM,GAAG,IAAI,CAErE"}

@@ -15,7 +15,9 @@
     "description": { "default": "Welcome description" },
     "officeFabricIconFontName": "Comment",
     "properties": {
-      "description": "Welcome"
+      "morningMessage": "",
+      "afternoonMessage": "",
+      "eveningMessage": ""
     }
   }]
 }
