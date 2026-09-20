@@ -1,0 +1,27 @@
+---
+description: Acesso SharePoint via BaseService e getSP
+globs: src/services/**/*.ts,src/utils/get-sp.ts
+alwaysApply: false
+---
+
+# Services
+
+PnP só via `getSP` em `src/utils/get-sp.ts`. Arquivo `{dominio}.service.ts` estende `BaseService`.
+
+```ts
+// ❌ BAD — no WebPart onInit ou no componente
+this.sp = spfi().using(SPFx(this.context));
+await sp.web.lists.getById(listId).items...
+
+// ✅ GOOD
+export class FaqService extends BaseService {
+  public async getItems(listId: string): Promise<IFaqItem[]> { ... }
+}
+
+const faqService = new FaqService(context);
+await faqService.getItems(listId);
+```
+
+- Não re-inicializar `spfi()` no `onInit` da WebPart
+- Não passar `SPFI` / `SPHttpClient` como prop de UI
+- Hook de tela instancia o service; o componente não chama PnP
