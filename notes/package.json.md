@@ -1,12 +1,12 @@
 # package.json Documentation
 
-This document explains the purpose of each element in the `package.json` file for the `spfx-2025` project, as well as a paragraph describing each dependency and devDependency package.
+This document explains the purpose of each element in the `package.json` file for the `spfx-tools` project, as well as a paragraph describing each dependency and devDependency package.
 
 ---
 
 ## Top-Level Fields
 
-- **name**: `"spfx-2025"`  
+- **name**: `"spfx-tools"`  
   The name of the project. This is used to identify the package in npm and other tooling.
 
 - **version**: `"0.0.1"`  

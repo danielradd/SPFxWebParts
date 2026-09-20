@@ -1,0 +1,42 @@
+---
+description: Padrões obrigatórios e anti-padrões do SPFx Tools
+alwaysApply: true
+---
+
+# SPFx Tools
+
+Web parts Welcome e FAQ. Pacote `spfx-tools`.
+
+## Stack
+
+- SPFx 1.21.1 · Node 22.17.0 · TypeScript ~5.3.3 (`jsx: react`) · React 17 · PnPjs 4.17 · Fluent UI 8
+
+## Estrutura
+
+```
+src/webparts/{nome}/   WebPart.ts → App.tsx → components/
+src/components/        UI compartilhada
+src/services/          SharePoint (estende BaseService)
+src/hooks/             Só hooks reutilizados entre web parts
+src/utils/get-sp.ts    Bootstrap PnP único
+src/styles/_variables.scss
+```
+
+## Padrões obrigatórios
+
+- WebPart só monta App: `React.createElement(App, { context: this.context, ...this.properties })`
+- UI: `export function Nome`. Único `export default`: a classe `*WebPart`
+- Dados SharePoint só em service (`BaseService` + `getSP`)
+- Strings de tela em `loc/en-us.js` + `mystrings.d.ts`
+- `async/await` + `try/catch` em fetch (service/hook)
+- Props tipadas (`props.d.ts` ou `interface` local). Sem PropTypes
+
+## Não fazer
+
+- `any`
+- `console.log` em produção (`console.error` só em falha inesperada)
+- PnP / `sp.web` / `SPHttpClient` dentro de componente
+- `components/components/`
+- `React.FC` e `export default` na UI
+- Strings hardcoded no JSX
+- Props Yeoman (`description`, `environmentMessage`, `spHttpClient`)

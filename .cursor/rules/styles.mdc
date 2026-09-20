@@ -1,0 +1,27 @@
+---
+description: CSS modules co-localizados e tokens em _variables.scss
+globs: "**/*.scss"
+alwaysApply: false
+---
+
+# Styles
+
+Co-localizar `styles.module.scss` na pasta do componente. Tokens em `src/styles/_variables.scss`.
+
+```scss
+// ❌ BAD — leftover Yeoman
+.welcomeImage { max-width: 420px; }
+.links { a { text-decoration: none; } }
+
+// ✅ GOOD
+@use "../../../styles/variables" as *;
+
+.faq {
+  padding: $spacing-m;
+  color: $body-text;
+}
+```
+
+- Path de `@use` é relativo ao `.scss` até `src/styles/variables` (`_variables.scss`)
+- Sem classes mortas do template (`.welcomeImage`, `.links`)
+- Sem pasta `components/components/` para isolar estilo

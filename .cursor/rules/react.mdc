@@ -1,0 +1,31 @@
+---
+description: Componentes React como função e pastas kebab-case
+globs: "**/*.tsx"
+alwaysApply: false
+---
+
+# React (SPFx)
+
+`jsx` é `react`: sempre `import * as React from "react"`.
+
+## Componentes
+
+```tsx
+// ❌ BAD
+const Faq: React.FC<IFaqProps> = (props) => { ... }
+export default Faq
+
+// ✅ GOOD
+export function Faq({ context, listId }: IProps): React.ReactElement { ... }
+```
+
+- Pasta kebab-case + `index.tsx` + `styles.module.scss`
+- Filho: `import { FaqItem } from "./faq-item"`
+- Contrato WebPart↔App em `components/props.d.ts`; props de filho na interface local
+- Empty state de configuração: `ConfigurePlaceholder` em `src/components/`
+
+## Hooks
+
+- Domínio da tela: `webparts/{nome}/hooks/use-*.ts` (ex. `use-faq-items`, `use-greeting`)
+- `src/hooks/` só quando houver reuso real
+- Preferir estado derivado (`useGreeting`) a `useEffect` desnecessário
