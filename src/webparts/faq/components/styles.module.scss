@@ -1,0 +1,20 @@
+@use "../../../styles/variables" as *;
+
+.faq {
+  overflow: hidden;
+  padding: $spacing-m;
+  color: $body-text;
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: inherit;
+  }
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 $spacing-m;
+}

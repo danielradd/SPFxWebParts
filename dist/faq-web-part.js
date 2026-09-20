@@ -1,10 +1,35 @@
-define(["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","FaqWebPartStrings","@microsoft/sp-lodash-subset","PropertyControlStrings","@microsoft/sp-http","@microsoft/sp-page-context"], (__WEBPACK_EXTERNAL_MODULE__85959__, __WEBPACK_EXTERNAL_MODULE__48398__, __WEBPACK_EXTERNAL_MODULE__89676__, __WEBPACK_EXTERNAL_MODULE__39877__, __WEBPACK_EXTERNAL_MODULE__56642__, __WEBPACK_EXTERNAL_MODULE__65335__, __WEBPACK_EXTERNAL_MODULE__50529__, __WEBPACK_EXTERNAL_MODULE__44340__, __WEBPACK_EXTERNAL_MODULE__91909__, __WEBPACK_EXTERNAL_MODULE__57408__) => { return /******/ (() => { // webpackBootstrap
+define(["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-webpart-base","@microsoft/sp-property-pane","@microsoft/sp-lodash-subset","PropertyControlStrings","@microsoft/sp-http","@microsoft/sp-page-context","FaqWebPartStrings"], (__WEBPACK_EXTERNAL_MODULE__85959__, __WEBPACK_EXTERNAL_MODULE__48398__, __WEBPACK_EXTERNAL_MODULE__89676__, __WEBPACK_EXTERNAL_MODULE__56642__, __WEBPACK_EXTERNAL_MODULE__39877__, __WEBPACK_EXTERNAL_MODULE__50529__, __WEBPACK_EXTERNAL_MODULE__44340__, __WEBPACK_EXTERNAL_MODULE__91909__, __WEBPACK_EXTERNAL_MODULE__57408__, __WEBPACK_EXTERNAL_MODULE__87716__) => { return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 95191:
-/*!****************************************************!*\
-  !*** ./lib/webparts/faq/components/Faq.module.css ***!
-  \****************************************************/
+/***/ 25256:
+/*!****************************************************************!*\
+  !*** ./lib/webparts/faq/components/faq-item/styles.module.css ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js */ 96323);
+// Imports
+
+
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".body_598810ec{margin:0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vaG9tZS9kYW5pZWwvcmVwb3MvU1BGeC9TUEZ4V2ViUGFydHMvc3JjL3dlYnBhcnRzL2ZhcS9jb21wb25lbnRzL2ZhcS1pdGVtL3N0eWxlcy5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxlQUNFLFFBQUEiLCJmaWxlIjoic3R5bGVzLm1vZHVsZS5jc3MifQ== */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  body_598810ec: "body_598810ec"
+});
+
+
+/***/ }),
+
+/***/ 95489:
+/*!*******************************************************!*\
+  !*** ./lib/webparts/faq/components/styles.module.css ***!
+  \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16,15 +41,14 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".faq_10574120{color:\"[theme:bodyText, default: #323130]\";color:var(--bodyText);overflow:hidden;padding:1em}.faq_10574120.teams_10574120{font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif}.welcome_10574120{text-align:center}.welcomeImage_10574120{max-width:420px;width:100%}.links_10574120 a{color:\"[theme:link, default:#03787c]\";color:var(--link);text-decoration:none}.links_10574120 a:hover{color:\"[theme:linkHovered, default: #014446]\";color:var(--linkHovered);text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vaG9tZS9kYW5pZWwvcmVwb3MvU1BGeC9TUEZ4V2ViUGFydHMvc3JjL3dlYnBhcnRzL2ZhcS9jb21wb25lbnRzL0ZhcS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSxjQUdFLDBDQUFBLENBQ0EscUJBQUEsQ0FIQSxlQUFBLENBQ0EsV0FFQSxDQUNBLDZCQUNFLHNGQUFBLENBSUosa0JBQ0UsaUJBQUEsQ0FHRix1QkFFRSxlQUFBLENBREEsVUFDQSxDQUlBLGtCQUVFLHFDQUFBLENBQ0EsaUJBQUEsQ0FGQSxvQkFFQSxDQUVBLHdCQUVFLDZDQUFBLENBQ0Esd0JBQUEsQ0FGQSx5QkFFQSIsImZpbGUiOiJGYXEubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".faq_35d79966{color:#323130;color:var(--bodyText);overflow:hidden;padding:1em}.faq_35d79966.teams_35d79966{font-family:inherit}.content_35d79966{text-align:center}.title_35d79966{margin:0 0 1em}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vaG9tZS9kYW5pZWwvcmVwb3MvU1BGeC9TUEZ4V2ViUGFydHMvc3JjL3dlYnBhcnRzL2ZhcS9jb21wb25lbnRzL3N0eWxlcy5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSxjQUdFLGFBQUEsQ0FDQSxxQkFBQSxDQUhBLGVBQUEsQ0FDQSxXQUVBLENBRUEsNkJBQ0UsbUJBQUEsQ0FJSixrQkFDRSxpQkFBQSxDQUdGLGdCQUNFLGNBQUEiLCJmaWxlIjoic3R5bGVzLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  faq_10574120: "faq_10574120",
-  teams_10574120: "teams_10574120",
-  welcome_10574120: "welcome_10574120",
-  welcomeImage_10574120: "welcomeImage_10574120",
-  links_10574120: "links_10574120"
+  faq_35d79966: "faq_35d79966",
+  teams_35d79966: "teams_35d79966",
+  content_35d79966: "content_35d79966",
+  title_35d79966: "title_35d79966"
 });
 
 
@@ -1730,10 +1754,263 @@ _microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index
 
 /***/ }),
 
-/***/ 79191:
-/*!********************************************!*\
-  !*** ./lib/webparts/faq/components/Faq.js ***!
-  \********************************************/
+/***/ 31138:
+/*!*******************************************************!*\
+  !*** ./lib/components/configure-placeholder/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ConfigurePlaceholder: () => (/* binding */ ConfigurePlaceholder)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @pnp/spfx-controls-react/lib/Placeholder */ 36268);
+
+
+function ConfigurePlaceholder(_a) {
+    var context = _a.context, description = _a.description, iconText = _a.iconText, buttonLabel = _a.buttonLabel;
+    function onConfigure() {
+        context.propertyPane.open();
+    }
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_1__.Placeholder, { description: description, iconName: "Edit", iconText: iconText, buttonLabel: buttonLabel, onConfigure: onConfigure }));
+}
+
+
+/***/ }),
+
+/***/ 97517:
+/*!*********************************!*\
+  !*** ./lib/components/index.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ConfigurePlaceholder: () => (/* reexport safe */ _configure_placeholder__WEBPACK_IMPORTED_MODULE_0__.ConfigurePlaceholder)
+/* harmony export */ });
+/* harmony import */ var _configure_placeholder__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./configure-placeholder */ 31138);
+
+
+
+/***/ }),
+
+/***/ 59263:
+/*!*******************************************!*\
+  !*** ./lib/services/base/base.service.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BaseService: () => (/* binding */ BaseService)
+/* harmony export */ });
+/* harmony import */ var _utils_get_sp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/get-sp */ 95100);
+
+var BaseService = /** @class */ (function () {
+    function BaseService(_context) {
+        this._context = _context;
+        this._sp = (0,_utils_get_sp__WEBPACK_IMPORTED_MODULE_0__.getSP)(this._context);
+        this._web = this._sp.web;
+    }
+    return BaseService;
+}());
+
+
+
+/***/ }),
+
+/***/ 18420:
+/*!*************************************!*\
+  !*** ./lib/services/faq.service.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   FaqService: () => (/* binding */ FaqService)
+/* harmony export */ });
+/* harmony import */ var _base_base_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base/base.service */ 59263);
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+var FaqService = /** @class */ (function (_super) {
+    __extends(FaqService, _super);
+    function FaqService() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    FaqService.prototype.getItems = function (listId) {
+        return __awaiter(this, void 0, void 0, function () {
+            var items;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!listId || listId.trim().length === 0) {
+                            return [2 /*return*/, []];
+                        }
+                        return [4 /*yield*/, this._web.lists
+                                .getById(listId)
+                                .items.select("Id", "Title", "Body")
+                                .top(50)()];
+                    case 1:
+                        items = _a.sent();
+                        return [2 /*return*/, items];
+                }
+            });
+        });
+    };
+    return FaqService;
+}(_base_base_service__WEBPACK_IMPORTED_MODULE_0__.BaseService));
+
+
+
+/***/ }),
+
+/***/ 95100:
+/*!*****************************!*\
+  !*** ./lib/utils/get-sp.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getSP: () => (/* binding */ getSP)
+/* harmony export */ });
+/* harmony import */ var _pnp_sp_webs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @pnp/sp/webs */ 47339);
+/* harmony import */ var _pnp_sp_lists__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @pnp/sp/lists */ 52185);
+/* harmony import */ var _pnp_sp_items__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @pnp/sp/items */ 95324);
+/* harmony import */ var _pnp_sp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @pnp/sp */ 24392);
+
+
+
+
+function getSP(context, siteUrl) {
+    return (0,_pnp_sp__WEBPACK_IMPORTED_MODULE_3__.spfi)(siteUrl).using((0,_pnp_sp__WEBPACK_IMPORTED_MODULE_3__.SPFx)(context));
+}
+
+
+/***/ }),
+
+/***/ 46217:
+/*!*********************************!*\
+  !*** ./lib/webparts/faq/App.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   App: () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components */ 76435);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+
+function App(props) {
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Faq, __assign({}, props));
+}
+
+
+/***/ }),
+
+/***/ 94040:
+/*!*******************************************************!*\
+  !*** ./lib/webparts/faq/components/faq-item/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   FaqItem: () => (/* binding */ FaqItem)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _pnp_spfx_controls_react_lib_Accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @pnp/spfx-controls-react/lib/Accordion */ 88983);
+/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.module.scss */ 83252);
+
+
+
+function FaqItem(_a) {
+    var title = _a.title, body = _a.body;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pnp_spfx_controls_react_lib_Accordion__WEBPACK_IMPORTED_MODULE_1__.Accordion, { defaultCollapsed: true, title: title },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _styles_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].body }, body)));
+}
+
+
+/***/ }),
+
+/***/ 83252:
+/*!********************************************************************!*\
+  !*** ./lib/webparts/faq/components/faq-item/styles.module.scss.js ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1741,11 +2018,97 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+__webpack_require__(/*! ./styles.module.css */ 25256);
+var styles = {
+    body: 'body_598810ec'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
+/***/ 76435:
+/*!**********************************************!*\
+  !*** ./lib/webparts/faq/components/index.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Faq: () => (/* binding */ Faq)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Faq_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Faq.module.scss */ 72291);
-/* harmony import */ var _pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @pnp/spfx-controls-react/lib/Placeholder */ 36268);
-/* harmony import */ var _pnp_spfx_controls_react_lib_Accordion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @pnp/spfx-controls-react/lib/Accordion */ 88983);
+/* harmony import */ var FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! FaqWebPartStrings */ 87716);
+/* harmony import */ var FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components */ 97517);
+/* harmony import */ var _hooks_use_faq_items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../hooks/use-faq-items */ 3878);
+/* harmony import */ var _faq_item__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./faq-item */ 94040);
+/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles.module.scss */ 57341);
+
+
+
+
+
+
+function Faq(_a) {
+    var context = _a.context, listId = _a.listId;
+    var _b = (0,_hooks_use_faq_items__WEBPACK_IMPORTED_MODULE_3__.useFaqItems)(context, listId), items = _b.items, loading = _b.loading, error = _b.error;
+    var hasTeamsContext = !!context.sdks.microsoftTeams;
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: "".concat(_styles_module_scss__WEBPACK_IMPORTED_MODULE_5__["default"].faq, " ").concat(hasTeamsContext ? _styles_module_scss__WEBPACK_IMPORTED_MODULE_5__["default"].teams : "") },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _styles_module_scss__WEBPACK_IMPORTED_MODULE_5__["default"].content },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _styles_module_scss__WEBPACK_IMPORTED_MODULE_5__["default"].title }, FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__.Title),
+            !listId && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components__WEBPACK_IMPORTED_MODULE_2__.ConfigurePlaceholder, { context: context, description: FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__.PlaceholderDescription, iconText: FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__.PlaceholderIconText, buttonLabel: FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__.PlaceholderButtonLabel })),
+            loading && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__.Loading),
+            error && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { role: "alert" },
+                FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__.ErrorPrefix,
+                " ",
+                error)),
+            !loading && !error && items.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, items.map(function (item) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_faq_item__WEBPACK_IMPORTED_MODULE_4__.FaqItem, { key: item.Id, title: item.Title, body: item.Body })); }))),
+            !loading && !error && listId && items.length === 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_1__.NoItemsFound)))));
+}
+
+
+/***/ }),
+
+/***/ 57341:
+/*!***********************************************************!*\
+  !*** ./lib/webparts/faq/components/styles.module.scss.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./styles.module.css */ 95489);
+var styles = {
+    faq: 'faq_35d79966',
+    teams: 'teams_35d79966',
+    content: 'content_35d79966',
+    title: 'title_35d79966'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
+/***/ 3878:
+/*!*************************************************!*\
+  !*** ./lib/webparts/faq/hooks/use-faq-items.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useFaqItems: () => (/* binding */ useFaqItems)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _services_faq_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/faq.service */ 18420);
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -1784,111 +2147,66 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 };
 
 
-
-
-
-var Faq = function (props) {
+function useFaqItems(context, listId) {
+    var hasList = !!listId && listId.trim().length > 0;
     var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]), items = _a[0], setItems = _a[1];
-    var _b = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true), loading = _b[0], setLoading = _b[1];
+    var _b = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(hasList), loading = _b[0], setLoading = _b[1];
     var _c = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null), error = _c[0], setError = _c[1];
-    var hasTeamsContext = props.hasTeamsContext, listId = props.listId, siteUrl = props.siteUrl, spHttpClient = props.spHttpClient, sp = props.sp, context = props.context;
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-        var isMounted = true; // guard against unmount
-        var fetchItems = function () { return __awaiter(void 0, void 0, void 0, function () {
-            var safeId, data, e_1, message;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        setLoading(true);
-                        setError(null);
-                        _a.label = 1;
-                    case 1:
-                        _a.trys.push([1, 3, 4, 5]);
-                        safeId = encodeURIComponent(listId || '');
-                        return [4 /*yield*/, sp.web.lists.getById(safeId).items.select("Id", "Title", "Body").top(50)()];
-                    case 2:
-                        data = _a.sent();
-                        // if (isMounted) setItems(data.value as ListItem[]);
-                        if (isMounted)
-                            setItems(data);
-                        return [3 /*break*/, 5];
-                    case 3:
-                        e_1 = _a.sent();
-                        if (isMounted) {
-                            message = e_1 instanceof Error ? e_1.message : String(e_1);
-                            setError(message || 'Unknown error');
-                        }
-                        return [3 /*break*/, 5];
-                    case 4:
-                        if (isMounted)
-                            setLoading(false);
-                        return [7 /*endfinally*/];
-                    case 5: return [2 /*return*/];
-                }
-            });
-        }); };
-        if (listId && listId.trim().length > 0) {
-            (function () { return __awaiter(void 0, void 0, void 0, function () {
+        var isMounted = true;
+        function fetchItems() {
+            return __awaiter(this, void 0, void 0, function () {
+                var faqService, data, e_1, message;
                 return __generator(this, function (_a) {
                     switch (_a.label) {
-                        case 0: return [4 /*yield*/, fetchItems()];
+                        case 0:
+                            if (!listId || listId.trim().length === 0) {
+                                if (isMounted) {
+                                    setItems([]);
+                                    setLoading(false);
+                                    setError(null);
+                                }
+                                return [2 /*return*/];
+                            }
+                            setLoading(true);
+                            setError(null);
+                            _a.label = 1;
                         case 1:
-                            _a.sent();
-                            return [2 /*return*/];
+                            _a.trys.push([1, 3, 4, 5]);
+                            faqService = new _services_faq_service__WEBPACK_IMPORTED_MODULE_1__.FaqService(context);
+                            return [4 /*yield*/, faqService.getItems(listId)];
+                        case 2:
+                            data = _a.sent();
+                            if (isMounted) {
+                                setItems(data);
+                            }
+                            return [3 /*break*/, 5];
+                        case 3:
+                            e_1 = _a.sent();
+                            if (isMounted) {
+                                message = e_1 instanceof Error ? e_1.message : String(e_1);
+                                setError(message || "Unknown error");
+                            }
+                            return [3 /*break*/, 5];
+                        case 4:
+                            if (isMounted) {
+                                setLoading(false);
+                            }
+                            return [7 /*endfinally*/];
+                        case 5: return [2 /*return*/];
                     }
                 });
-            }); })().catch(function (err) {
-                // Optional: handle unexpected errors outside fetchItems()
-                console.error('FetchItems failed', err);
             });
         }
-        else {
-            setItems([]);
-            setLoading(false);
-        }
-        return function () { isMounted = false; };
-    }, [spHttpClient, siteUrl, listId]);
-    var _onConfigure = function () {
-        // Context of the web part
-        context.propertyPane.open();
-    };
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: "".concat(_Faq_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].faq, " ").concat(hasTeamsContext ? _Faq_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].teams : '') },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Faq_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].welcome },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "FAQ"),
-            !listId && react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_2__.Placeholder, { description: 'Please configure the list', iconName: 'Edit', iconText: 'Setup Required', buttonLabel: 'Configure', onConfigure: _onConfigure }),
-            loading && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Loading\u2026"),
-            error && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { role: "alert" },
-                "Error: ",
-                error),
-            !loading && !error && items.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, items.map(function (i) { return react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pnp_spfx_controls_react_lib_Accordion__WEBPACK_IMPORTED_MODULE_3__.Accordion, { defaultCollapsed: true, key: i.Id, title: i.Title },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, i.Body)); }))),
-            !loading && !error && listId && items.length === 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "No items found.")))));
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Faq);
-
-
-/***/ }),
-
-/***/ 72291:
-/*!********************************************************!*\
-  !*** ./lib/webparts/faq/components/Faq.module.scss.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-__webpack_require__(/*! ./Faq.module.css */ 95191);
-var styles = {
-    faq: 'faq_10574120',
-    teams: 'teams_10574120',
-    welcome: 'welcome_10574120',
-    welcomeImage: 'welcomeImage_10574120',
-    links: 'links_10574120'
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+        fetchItems().catch(function (err) {
+            console.error("FetchItems failed", err);
+        });
+        return function () {
+            isMounted = false;
+        };
+    }, [context, listId]);
+    return { items: items, loading: loading, error: error };
+}
 
 
 /***/ }),
@@ -7984,7 +8302,7 @@ var assign = tslib__WEBPACK_IMPORTED_MODULE_0__.__assign;
 
 /***/ }),
 
-/***/ 48908:
+/***/ 26527:
 /*!**********************************************************!*\
   !*** ./node_modules/@fluentui/keyboard-keys/lib/keys.js ***!
   \**********************************************************/
@@ -10045,7 +10363,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   useARIAButtonProps: () => (/* binding */ useARIAButtonProps)
 /* harmony export */ });
-/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 48908);
+/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 26527);
 /* harmony import */ var _fluentui_react_utilities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fluentui/react-utilities */ 66994);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -60136,7 +60454,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Table_useTable__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../Table/useTable */ 98908);
 /* harmony import */ var _fluentui_react_utilities__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fluentui/react-utilities */ 66994);
 /* harmony import */ var _fluentui_react_utilities__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @fluentui/react-utilities */ 59839);
-/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 48908);
+/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 26527);
 /* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../hooks */ 53160);
 /* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../hooks */ 14522);
 /* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../hooks */ 17545);
@@ -61010,7 +61328,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fluentui_react_utilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fluentui/react-utilities */ 66994);
 /* harmony import */ var _fluentui_react_utilities__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fluentui/react-utilities */ 6084);
 /* harmony import */ var _fluentui_react_utilities__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fluentui/react-utilities */ 46148);
-/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 48908);
+/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 26527);
 /* harmony import */ var _TableRow_useTableRow__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../TableRow/useTableRow */ 11800);
 /* harmony import */ var _contexts_dataGridContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../contexts/dataGridContext */ 52753);
 /* harmony import */ var _DataGridSelectionCell_DataGridSelectionCell__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../DataGridSelectionCell/DataGridSelectionCell */ 31573);
@@ -63462,7 +63780,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 48908);
+/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 26527);
 /* harmony import */ var _fluentui_react_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fluentui/react-utilities */ 66994);
 /* harmony import */ var _fluentui_react_tabster__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fluentui/react-tabster */ 68627);
 /* harmony import */ var _fluentui_react_tabster__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fluentui/react-tabster */ 54042);
@@ -64086,7 +64404,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _fluentui_react_shared_contexts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fluentui/react-shared-contexts */ 91586);
-/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 48908);
+/* harmony import */ var _fluentui_keyboard_keys__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fluentui/keyboard-keys */ 26527);
 /* harmony import */ var _fluentui_react_tabster__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fluentui/react-tabster */ 9948);
 /* harmony import */ var _fluentui_react_tabster__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fluentui/react-tabster */ 89737);
 /* harmony import */ var _fluentui_react_tabster__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fluentui/react-tabster */ 68627);
@@ -101381,7 +101699,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _controls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controls */ 76501);
 /* harmony import */ var _fluentui_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fluentui/react */ 13123);
-/* harmony import */ var _fluentui_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fluentui/react */ 87716);
+/* harmony import */ var _fluentui_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fluentui/react */ 65335);
 /* harmony import */ var _fluentui_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fluentui/react */ 88274);
 /* harmony import */ var _fluentui_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fluentui/react */ 54030);
 /* harmony import */ var _fluentui_react_lib_Link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fluentui/react/lib/Link */ 42417);
@@ -102844,7 +103162,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fluentui_react_lib_DetailsList__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @fluentui/react/lib/DetailsList */ 59219);
 /* harmony import */ var _fluentui_react_lib_DetailsList__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @fluentui/react/lib/DetailsList */ 95604);
 /* harmony import */ var _fluentui_react_lib_CommandBar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fluentui/react/lib/CommandBar */ 13945);
-/* harmony import */ var _fluentui_react_lib_ScrollablePane__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fluentui/react/lib/ScrollablePane */ 87716);
+/* harmony import */ var _fluentui_react_lib_ScrollablePane__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fluentui/react/lib/ScrollablePane */ 65335);
 /* harmony import */ var _FileBrowser_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FileBrowser.module.scss */ 7814);
 /* harmony import */ var PropertyControlStrings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! PropertyControlStrings */ 44340);
 /* harmony import */ var PropertyControlStrings__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(PropertyControlStrings__WEBPACK_IMPORTED_MODULE_5__);
@@ -141156,7 +141474,7 @@ var ScrollablePaneBase = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 87716:
+/***/ 65335:
 /*!*******************************************************************************************************************************!*\
   !*** ./node_modules/@pnp/spfx-property-controls/node_modules/@fluentui/react/lib/components/ScrollablePane/ScrollablePane.js ***!
   \*******************************************************************************************************************************/
@@ -248320,14 +248638,14 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__56642__;
 
 /***/ }),
 
-/***/ 65335:
+/***/ 87716:
 /*!************************************!*\
   !*** external "FaqWebPartStrings" ***!
   \************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE__65335__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__87716__;
 
 /***/ }),
 
@@ -254324,18 +254642,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _microsoft_sp_core_library__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @microsoft/sp-core-library */ 89676);
 /* harmony import */ var _microsoft_sp_core_library__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_core_library__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @microsoft/sp-property-pane */ 39877);
-/* harmony import */ var _microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @microsoft/sp-webpart-base */ 56642);
-/* harmony import */ var _microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! FaqWebPartStrings */ 65335);
+/* harmony import */ var _microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @microsoft/sp-webpart-base */ 56642);
+/* harmony import */ var _microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _pnp_spfx_property_controls__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @pnp/spfx-property-controls */ 99225);
+/* harmony import */ var FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! FaqWebPartStrings */ 87716);
 /* harmony import */ var FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_Faq__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Faq */ 79191);
-/* harmony import */ var _pnp_sp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @pnp/sp */ 24392);
-/* harmony import */ var _pnp_sp_webs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @pnp/sp/webs */ 47339);
-/* harmony import */ var _pnp_sp_lists__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @pnp/sp/lists */ 52185);
-/* harmony import */ var _pnp_sp_items__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @pnp/sp/items */ 95324);
-/* harmony import */ var _pnp_spfx_property_controls__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @pnp/spfx-property-controls */ 99225);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./App */ 46217);
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -254351,16 +254663,20 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 
 
 
-
-
-
-
-// Core SharePoint bits
-
-// Extend with features you need
 
 
 
@@ -254368,10 +254684,7 @@ var __extends = (undefined && undefined.__extends) || (function () {
 var FaqWebPart = /** @class */ (function (_super) {
     __extends(FaqWebPart, _super);
     function FaqWebPart() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this._isDarkTheme = false;
-        _this._environmentMessage = '';
-        return _this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     Object.defineProperty(FaqWebPart.prototype, "disableReactivePropertyChanges", {
         get: function () {
@@ -254381,42 +254694,27 @@ var FaqWebPart = /** @class */ (function (_super) {
         configurable: true
     });
     FaqWebPart.prototype.render = function () {
-        var element = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Faq__WEBPACK_IMPORTED_MODULE_6__["default"], {
-            description: this.properties.description,
-            isDarkTheme: this._isDarkTheme,
-            environmentMessage: this._environmentMessage,
-            hasTeamsContext: !!this.context.sdks.microsoftTeams,
-            userDisplayName: this.context.pageContext.user.displayName,
-            listId: this.properties.listId,
-            siteUrl: this.context.pageContext.web.absoluteUrl,
-            spHttpClient: this.context.spHttpClient,
-            sp: this.sp,
-            context: this.context
-        });
+        var element = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App__WEBPACK_IMPORTED_MODULE_6__.App, __assign({ context: this.context }, this.properties));
         react_dom__WEBPACK_IMPORTED_MODULE_1__.render(element, this.domElement);
     };
     FaqWebPart.prototype.onInit = function () {
-        var _this = this;
-        return this._getEnvironmentMessage().then(function (message) {
-            _this._environmentMessage = message;
-            _this.sp = (0,_pnp_sp__WEBPACK_IMPORTED_MODULE_7__.spfi)().using((0,_pnp_sp__WEBPACK_IMPORTED_MODULE_7__.SPFx)(_this.context));
-        });
+        return this._getEnvironmentMessage().then();
     };
     FaqWebPart.prototype._getEnvironmentMessage = function () {
         var _this = this;
-        if (!!this.context.sdks.microsoftTeams) { // running in Teams, office.com or Outlook
+        if (!!this.context.sdks.microsoftTeams) {
             return this.context.sdks.microsoftTeams.teamsJs.app.getContext()
                 .then(function (context) {
-                var environmentMessage = '';
+                var environmentMessage = "";
                 switch (context.app.host.name) {
-                    case 'Office': // running in Office
+                    case "Office":
                         environmentMessage = _this.context.isServedFromLocalhost ? FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppLocalEnvironmentOffice : FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppOfficeEnvironment;
                         break;
-                    case 'Outlook': // running in Outlook
+                    case "Outlook":
                         environmentMessage = _this.context.isServedFromLocalhost ? FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppLocalEnvironmentOutlook : FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppOutlookEnvironment;
                         break;
-                    case 'Teams': // running in Teams
-                    case 'TeamsModern':
+                    case "Teams":
+                    case "TeamsModern":
                         environmentMessage = _this.context.isServedFromLocalhost ? FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppLocalEnvironmentTeams : FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppTeamsTabEnvironment;
                         break;
                     default:
@@ -254431,12 +254729,11 @@ var FaqWebPart = /** @class */ (function (_super) {
         if (!currentTheme) {
             return;
         }
-        this._isDarkTheme = !!currentTheme.isInverted;
         var semanticColors = currentTheme.semanticColors;
         if (semanticColors) {
-            this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
-            this.domElement.style.setProperty('--link', semanticColors.link || null);
-            this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
+            this.domElement.style.setProperty("--bodyText", semanticColors.bodyText || null);
+            this.domElement.style.setProperty("--link", semanticColors.link || null);
+            this.domElement.style.setProperty("--linkHovered", semanticColors.linkHovered || null);
         }
     };
     FaqWebPart.prototype.onDispose = function () {
@@ -254444,7 +254741,7 @@ var FaqWebPart = /** @class */ (function (_super) {
     };
     Object.defineProperty(FaqWebPart.prototype, "dataVersion", {
         get: function () {
-            return _microsoft_sp_core_library__WEBPACK_IMPORTED_MODULE_2__.Version.parse('1.0');
+            return _microsoft_sp_core_library__WEBPACK_IMPORTED_MODULE_2__.Version.parse("1.0");
         },
         enumerable: false,
         configurable: true
@@ -254460,14 +254757,11 @@ var FaqWebPart = /** @class */ (function (_super) {
                         {
                             groupName: FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.BasicGroupName,
                             groupFields: [
-                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)('description', {
-                                    label: FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.DescriptionFieldLabel
-                                }),
-                                (0,_pnp_spfx_property_controls__WEBPACK_IMPORTED_MODULE_11__.PropertyFieldListPicker)('listId', {
+                                (0,_pnp_spfx_property_controls__WEBPACK_IMPORTED_MODULE_4__.PropertyFieldListPicker)("listId", {
                                     label: FaqWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.ListTitleFieldLabel,
                                     selectedList: this.properties.listId,
                                     includeHidden: false,
-                                    orderBy: _pnp_spfx_property_controls__WEBPACK_IMPORTED_MODULE_11__.PropertyFieldListPickerOrderBy.Title,
+                                    orderBy: _pnp_spfx_property_controls__WEBPACK_IMPORTED_MODULE_4__.PropertyFieldListPickerOrderBy.Title,
                                     multiSelect: false,
                                     disabled: false,
                                     onPropertyChange: this.onPropertyPaneFieldChanged.bind(this),
@@ -254485,7 +254779,7 @@ var FaqWebPart = /** @class */ (function (_super) {
         };
     };
     return FaqWebPart;
-}(_microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_4__.BaseClientSideWebPart));
+}(_microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_3__.BaseClientSideWebPart));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FaqWebPart);
 
 })();

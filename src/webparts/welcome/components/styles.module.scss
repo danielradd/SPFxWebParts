@@ -1,0 +1,17 @@
+@use "../../../styles/variables" as *;
+
+.welcome {
+  overflow: hidden;
+  padding: $spacing-m;
+  color: $body-text;
+  color: var(--bodyText);
+  text-align: center;
+
+  &.teams {
+    font-family: inherit;
+  }
+}
+
+.title {
+  margin: 0;
+}

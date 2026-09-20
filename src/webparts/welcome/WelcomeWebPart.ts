@@ -1,19 +1,18 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
-import { Version } from '@microsoft/sp-core-library';
+import * as React from "react";
+import * as ReactDom from "react-dom";
+import { Version } from "@microsoft/sp-core-library";
 import {
   type IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-property-pane';
-import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
+} from "@microsoft/sp-property-pane";
+import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
+import { IReadonlyTheme } from "@microsoft/sp-component-base";
 
-import * as strings from 'WelcomeWebPartStrings';
-import Welcome from './components/Welcome';
-import { IWelcomeProps } from './components/IWelcomeProps';
+import * as strings from "WelcomeWebPartStrings";
+import { App } from "./App";
+import { IProps } from "./components/props";
 
 export interface IWelcomeWebPartProps {
-  description: string;
   morningMessage: string;
   afternoonMessage: string;
   eveningMessage: string;
@@ -21,49 +20,34 @@ export interface IWelcomeWebPartProps {
 
 export default class WelcomeWebPart extends BaseClientSideWebPart<IWelcomeWebPartProps> {
 
-  private _isDarkTheme: boolean = false;
-  private _environmentMessage: string = '';
-
   public render(): void {
-    const element: React.ReactElement<IWelcomeProps> = React.createElement(
-      Welcome,
-      {
-        description: this.properties.description,
-        morningMessage: this.properties.morningMessage,
-        afternoonMessage: this.properties.afternoonMessage,
-        eveningMessage: this.properties.eveningMessage,
-        isDarkTheme: this._isDarkTheme,
-        environmentMessage: this._environmentMessage,
-        hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
-      }
-    );
+    const element: React.ReactElement<IProps> = React.createElement(App, {
+      context: this.context,
+      userDisplayName: this.context.pageContext.user.displayName,
+      ...this.properties
+    });
 
     ReactDom.render(element, this.domElement);
   }
 
   protected onInit(): Promise<void> {
-    return this._getEnvironmentMessage().then(message => {
-      this._environmentMessage = message;
-    });
+    return this._getEnvironmentMessage().then();
   }
 
-
-
   private _getEnvironmentMessage(): Promise<string> {
-    if (!!this.context.sdks.microsoftTeams) { // running in Teams, office.com or Outlook
+    if (!!this.context.sdks.microsoftTeams) {
       return this.context.sdks.microsoftTeams.teamsJs.app.getContext()
         .then(context => {
-          let environmentMessage: string = '';
+          let environmentMessage: string = "";
           switch (context.app.host.name) {
-            case 'Office': // running in Office
+            case "Office":
               environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOffice : strings.AppOfficeEnvironment;
               break;
-            case 'Outlook': // running in Outlook
+            case "Outlook":
               environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOutlook : strings.AppOutlookEnvironment;
               break;
-            case 'Teams': // running in Teams
-            case 'TeamsModern':
+            case "Teams":
+            case "TeamsModern":
               environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentTeams : strings.AppTeamsTabEnvironment;
               break;
             default:
@@ -82,17 +66,15 @@ export default class WelcomeWebPart extends BaseClientSideWebPart<IWelcomeWebPar
       return;
     }
 
-    this._isDarkTheme = !!currentTheme.isInverted;
     const {
       semanticColors
     } = currentTheme;
 
     if (semanticColors) {
-      this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
-      this.domElement.style.setProperty('--link', semanticColors.link || null);
-      this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
+      this.domElement.style.setProperty("--bodyText", semanticColors.bodyText || null);
+      this.domElement.style.setProperty("--link", semanticColors.link || null);
+      this.domElement.style.setProperty("--linkHovered", semanticColors.linkHovered || null);
     }
-
   }
 
   protected onDispose(): void {
@@ -100,7 +82,7 @@ export default class WelcomeWebPart extends BaseClientSideWebPart<IWelcomeWebPar
   }
 
   protected get dataVersion(): Version {
-    return Version.parse('1.0');
+    return Version.parse("1.0");
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
@@ -114,16 +96,13 @@ export default class WelcomeWebPart extends BaseClientSideWebPart<IWelcomeWebPar
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                }),
-                PropertyPaneTextField('morningMessage', {
+                PropertyPaneTextField("morningMessage", {
                   label: strings.MorningMessageLabel
                 }),
-                PropertyPaneTextField('afternoonMessage', {
+                PropertyPaneTextField("afternoonMessage", {
                   label: strings.AfternoonMessageLabel
                 }),
-                PropertyPaneTextField('eveningMessage', {
+                PropertyPaneTextField("eveningMessage", {
                   label: strings.EveningMessageLabel
                 })
               ]

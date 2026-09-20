@@ -1,7 +1,6 @@
 declare interface IFaqWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
-  DescriptionFieldLabel: string;
   AppLocalEnvironmentSharePoint: string;
   AppLocalEnvironmentTeams: string;
   AppLocalEnvironmentOffice: string;
@@ -12,6 +11,13 @@ declare interface IFaqWebPartStrings {
   AppOutlookEnvironment: string;
   UnknownEnvironment: string;
   ListTitleFieldLabel: string;
+  Title: string;
+  Loading: string;
+  NoItemsFound: string;
+  ErrorPrefix: string;
+  PlaceholderDescription: string;
+  PlaceholderIconText: string;
+  PlaceholderButtonLabel: string;
 }
 
 declare module 'FaqWebPartStrings' {

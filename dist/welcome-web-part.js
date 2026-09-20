@@ -1,10 +1,10 @@
 define("aa1fde5e-b966-4ad6-ae70-6287bdabb906_0.0.1", ["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","WelcomeWebPartStrings","@microsoft/sp-lodash-subset"], (__WEBPACK_EXTERNAL_MODULE__85959__, __WEBPACK_EXTERNAL_MODULE__48398__, __WEBPACK_EXTERNAL_MODULE__89676__, __WEBPACK_EXTERNAL_MODULE__39877__, __WEBPACK_EXTERNAL_MODULE__56642__, __WEBPACK_EXTERNAL_MODULE__56219__, __WEBPACK_EXTERNAL_MODULE__50529__) => { return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 89207:
-/*!************************************************************!*\
-  !*** ./lib/webparts/welcome/components/Welcome.module.css ***!
-  \************************************************************/
+/***/ 74989:
+/*!***********************************************************!*\
+  !*** ./lib/webparts/welcome/components/styles.module.css ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16,85 +16,188 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".welcome_653b3be3{color:\"[theme:bodyText, default: #323130]\";color:var(--bodyText);overflow:hidden;padding:1em}.welcome_653b3be3.teams_653b3be3{font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif}.welcome_653b3be3{text-align:center}.welcomeImage_653b3be3{max-width:420px;width:100%}.links_653b3be3 a{color:\"[theme:link, default:#03787c]\";color:var(--link);text-decoration:none}.links_653b3be3 a:hover{color:\"[theme:linkHovered, default: #014446]\";color:var(--linkHovered);text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vaG9tZS9kYW5pZWwvcmVwb3MvU1BGeC9TUEZ4V2ViUGFydHMvc3JjL3dlYnBhcnRzL3dlbGNvbWUvY29tcG9uZW50cy9XZWxjb21lLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLGtCQUdFLDBDQUFBLENBQ0EscUJBQUEsQ0FIQSxlQUFBLENBQ0EsV0FFQSxDQUNBLGlDQUNFLHNGQUFBLENBSUosa0JBQ0UsaUJBQUEsQ0FHRix1QkFFRSxlQUFBLENBREEsVUFDQSxDQUlBLGtCQUVFLHFDQUFBLENBQ0EsaUJBQUEsQ0FGQSxvQkFFQSxDQUVBLHdCQUVFLDZDQUFBLENBQ0Esd0JBQUEsQ0FGQSx5QkFFQSIsImZpbGUiOiJXZWxjb21lLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".welcome_c4906268{color:#323130;color:var(--bodyText);overflow:hidden;padding:1em;text-align:center}.welcome_c4906268.teams_c4906268{font-family:inherit}.title_c4906268{margin:0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vaG9tZS9kYW5pZWwvcmVwb3MvU1BGeC9TUEZ4V2ViUGFydHMvc3JjL3dlYnBhcnRzL3dlbGNvbWUvY29tcG9uZW50cy9zdHlsZXMubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsa0JBR0UsYUFBQSxDQUNBLHFCQUFBLENBSEEsZUFBQSxDQUNBLFdBQUEsQ0FHQSxpQkFBQSxDQUVBLGlDQUNFLG1CQUFBLENBSUosZ0JBQ0UsUUFBQSIsImZpbGUiOiJzdHlsZXMubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  welcome_653b3be3: "welcome_653b3be3",
-  teams_653b3be3: "teams_653b3be3",
-  welcomeImage_653b3be3: "welcomeImage_653b3be3",
-  links_653b3be3: "links_653b3be3"
+  welcome_c4906268: "welcome_c4906268",
+  teams_c4906268: "teams_c4906268",
+  title_c4906268: "title_c4906268"
 });
 
 
 /***/ }),
 
-/***/ 26527:
+/***/ 31138:
+/*!*******************************************************!*\
+  !*** ./lib/components/configure-placeholder/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ConfigurePlaceholder: () => (/* binding */ ConfigurePlaceholder)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @pnp/spfx-controls-react/lib/Placeholder */ 36268);
+
+
+function ConfigurePlaceholder(_a) {
+    var context = _a.context, description = _a.description, iconText = _a.iconText, buttonLabel = _a.buttonLabel;
+    function onConfigure() {
+        context.propertyPane.open();
+    }
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_1__.Placeholder, { description: description, iconName: "Edit", iconText: iconText, buttonLabel: buttonLabel, onConfigure: onConfigure }));
+}
+
+
+/***/ }),
+
+/***/ 97517:
+/*!*********************************!*\
+  !*** ./lib/components/index.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ConfigurePlaceholder: () => (/* reexport safe */ _configure_placeholder__WEBPACK_IMPORTED_MODULE_0__.ConfigurePlaceholder)
+/* harmony export */ });
+/* harmony import */ var _configure_placeholder__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./configure-placeholder */ 31138);
+
+
+
+/***/ }),
+
+/***/ 92637:
+/*!*************************************!*\
+  !*** ./lib/webparts/welcome/App.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   App: () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components */ 58567);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+
+function App(props) {
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components__WEBPACK_IMPORTED_MODULE_1__.Welcome, __assign({}, props));
+}
+
+
+/***/ }),
+
+/***/ 58567:
+/*!**************************************************!*\
+  !*** ./lib/webparts/welcome/components/index.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Welcome: () => (/* binding */ Welcome)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-lodash-subset */ 50529);
+/* harmony import */ var _microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! WelcomeWebPartStrings */ 56219);
+/* harmony import */ var WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components */ 97517);
+/* harmony import */ var _hooks_use_greeting__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../hooks/use-greeting */ 38020);
+/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.module.scss */ 76329);
+
+
+
+
+
+
+function Welcome(_a) {
+    var context = _a.context, userDisplayName = _a.userDisplayName, morningMessage = _a.morningMessage, afternoonMessage = _a.afternoonMessage, eveningMessage = _a.eveningMessage;
+    var message = (0,_hooks_use_greeting__WEBPACK_IMPORTED_MODULE_5__.useGreeting)({
+        morningMessage: morningMessage,
+        afternoonMessage: afternoonMessage,
+        eveningMessage: eveningMessage
+    });
+    var hasTeamsContext = !!context.sdks.microsoftTeams;
+    if (!message.trim()) {
+        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components__WEBPACK_IMPORTED_MODULE_3__.ConfigurePlaceholder, { context: context, description: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_2__.PlaceholderDescription, iconText: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_2__.PlaceholderIconText, buttonLabel: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_2__.PlaceholderButtonLabel }));
+    }
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: "".concat(_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].welcome, " ").concat(hasTeamsContext ? _styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].teams : "") },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].title },
+            message,
+            ", ",
+            (0,_microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_1__.escape)(userDisplayName),
+            "!")));
+}
+
+
+/***/ }),
+
+/***/ 76329:
+/*!***************************************************************!*\
+  !*** ./lib/webparts/welcome/components/styles.module.scss.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./styles.module.css */ 74989);
+var styles = {
+    welcome: 'welcome_c4906268',
+    teams: 'teams_c4906268',
+    title: 'title_c4906268'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
+/***/ 38020:
 /*!****************************************************!*\
-  !*** ./lib/webparts/welcome/components/Welcome.js ***!
+  !*** ./lib/webparts/welcome/hooks/use-greeting.js ***!
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   useGreeting: () => (/* binding */ useGreeting)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Welcome_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Welcome.module.scss */ 42107);
-/* harmony import */ var _microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @microsoft/sp-lodash-subset */ 50529);
-/* harmony import */ var _microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @pnp/spfx-controls-react/lib/Placeholder */ 36268);
-
-
-
-
-var Welcome = function (props) {
-    var hasTeamsContext = props.hasTeamsContext, userDisplayName = props.userDisplayName, morningMessage = props.morningMessage, afternoonMessage = props.afternoonMessage, eveningMessage = props.eveningMessage;
-    var now = new Date();
-    var hour = now.getHours();
-    //const message = hour < 12 ? morningMessage : hour >= 12 && hour < 18 ? afternoonMessage : eveningMessage
-    var message = hour < 12
-        ? (morningMessage || '')
-        : hour < 18
-            ? (afternoonMessage || '')
-            : (eveningMessage || '');
-    if (!message.trim()) {
-        return react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pnp_spfx_controls_react_lib_Placeholder__WEBPACK_IMPORTED_MODULE_3__.Placeholder, { description: 'Please add messages', iconName: 'Edit', iconText: 'Setup Webpart' });
+function useGreeting(messages) {
+    var morningMessage = messages.morningMessage, afternoonMessage = messages.afternoonMessage, eveningMessage = messages.eveningMessage;
+    var hour = new Date().getHours();
+    if (hour < 12) {
+        return morningMessage || "";
     }
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: "".concat(_Welcome_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].welcome, " ").concat(hasTeamsContext ? _Welcome_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].teams : '') },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Welcome_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].welcome },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null,
-                message,
-                ", ",
-                (0,_microsoft_sp_lodash_subset__WEBPACK_IMPORTED_MODULE_2__.escape)(userDisplayName),
-                "!"))));
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Welcome);
-
-
-/***/ }),
-
-/***/ 42107:
-/*!****************************************************************!*\
-  !*** ./lib/webparts/welcome/components/Welcome.module.scss.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-__webpack_require__(/*! ./Welcome.module.css */ 89207);
-var styles = {
-    welcome: 'welcome_653b3be3',
-    teams: 'teams_653b3be3',
-    welcomeImage: 'welcomeImage_653b3be3',
-    links: 'links_653b3be3'
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+    if (hour < 18) {
+        return afternoonMessage || "";
+    }
+    return eveningMessage || "";
+}
 
 
 /***/ }),
@@ -80829,7 +80932,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_webpart_base__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! WelcomeWebPartStrings */ 56219);
 /* harmony import */ var WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_Welcome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Welcome */ 26527);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./App */ 92637);
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -80845,6 +80948,17 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 
 
 
@@ -80855,45 +80969,30 @@ var __extends = (undefined && undefined.__extends) || (function () {
 var WelcomeWebPart = /** @class */ (function (_super) {
     __extends(WelcomeWebPart, _super);
     function WelcomeWebPart() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this._isDarkTheme = false;
-        _this._environmentMessage = '';
-        return _this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     WelcomeWebPart.prototype.render = function () {
-        var element = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Welcome__WEBPACK_IMPORTED_MODULE_6__["default"], {
-            description: this.properties.description,
-            morningMessage: this.properties.morningMessage,
-            afternoonMessage: this.properties.afternoonMessage,
-            eveningMessage: this.properties.eveningMessage,
-            isDarkTheme: this._isDarkTheme,
-            environmentMessage: this._environmentMessage,
-            hasTeamsContext: !!this.context.sdks.microsoftTeams,
-            userDisplayName: this.context.pageContext.user.displayName
-        });
+        var element = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App__WEBPACK_IMPORTED_MODULE_6__.App, __assign({ context: this.context, userDisplayName: this.context.pageContext.user.displayName }, this.properties));
         react_dom__WEBPACK_IMPORTED_MODULE_1__.render(element, this.domElement);
     };
     WelcomeWebPart.prototype.onInit = function () {
-        var _this = this;
-        return this._getEnvironmentMessage().then(function (message) {
-            _this._environmentMessage = message;
-        });
+        return this._getEnvironmentMessage().then();
     };
     WelcomeWebPart.prototype._getEnvironmentMessage = function () {
         var _this = this;
-        if (!!this.context.sdks.microsoftTeams) { // running in Teams, office.com or Outlook
+        if (!!this.context.sdks.microsoftTeams) {
             return this.context.sdks.microsoftTeams.teamsJs.app.getContext()
                 .then(function (context) {
-                var environmentMessage = '';
+                var environmentMessage = "";
                 switch (context.app.host.name) {
-                    case 'Office': // running in Office
+                    case "Office":
                         environmentMessage = _this.context.isServedFromLocalhost ? WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppLocalEnvironmentOffice : WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppOfficeEnvironment;
                         break;
-                    case 'Outlook': // running in Outlook
+                    case "Outlook":
                         environmentMessage = _this.context.isServedFromLocalhost ? WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppLocalEnvironmentOutlook : WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppOutlookEnvironment;
                         break;
-                    case 'Teams': // running in Teams
-                    case 'TeamsModern':
+                    case "Teams":
+                    case "TeamsModern":
                         environmentMessage = _this.context.isServedFromLocalhost ? WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppLocalEnvironmentTeams : WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AppTeamsTabEnvironment;
                         break;
                     default:
@@ -80908,12 +81007,11 @@ var WelcomeWebPart = /** @class */ (function (_super) {
         if (!currentTheme) {
             return;
         }
-        this._isDarkTheme = !!currentTheme.isInverted;
         var semanticColors = currentTheme.semanticColors;
         if (semanticColors) {
-            this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
-            this.domElement.style.setProperty('--link', semanticColors.link || null);
-            this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
+            this.domElement.style.setProperty("--bodyText", semanticColors.bodyText || null);
+            this.domElement.style.setProperty("--link", semanticColors.link || null);
+            this.domElement.style.setProperty("--linkHovered", semanticColors.linkHovered || null);
         }
     };
     WelcomeWebPart.prototype.onDispose = function () {
@@ -80921,7 +81019,7 @@ var WelcomeWebPart = /** @class */ (function (_super) {
     };
     Object.defineProperty(WelcomeWebPart.prototype, "dataVersion", {
         get: function () {
-            return _microsoft_sp_core_library__WEBPACK_IMPORTED_MODULE_2__.Version.parse('1.0');
+            return _microsoft_sp_core_library__WEBPACK_IMPORTED_MODULE_2__.Version.parse("1.0");
         },
         enumerable: false,
         configurable: true
@@ -80937,16 +81035,13 @@ var WelcomeWebPart = /** @class */ (function (_super) {
                         {
                             groupName: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.BasicGroupName,
                             groupFields: [
-                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)('description', {
-                                    label: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.DescriptionFieldLabel
-                                }),
-                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)('morningMessage', {
+                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)("morningMessage", {
                                     label: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.MorningMessageLabel
                                 }),
-                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)('afternoonMessage', {
+                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)("afternoonMessage", {
                                     label: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.AfternoonMessageLabel
                                 }),
-                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)('eveningMessage', {
+                                (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)("eveningMessage", {
                                     label: WelcomeWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.EveningMessageLabel
                                 })
                             ]
